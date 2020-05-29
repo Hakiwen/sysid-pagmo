@@ -17,4 +17,5 @@ function(ADD_SYSID_PAGMO_TUTORIAL arg1)
     add_test(${arg1} ${arg1})
 endfunction()
 
-ADD_SYSID_PAGMO_TUTORIAL(test)
+ADD_SYSID_PAGMO_TUTORIAL(SIR_og)
+ADD_SYSID_PAGMO_TUTORIAL(SIR)

@@ -7,18 +7,15 @@
 
 
 //// Alernative would to be to have a vector of structs or pairs of time type and vector that represents each datapoint
-class Dataset{
-public:
-    virtual ~Dataset();
-
+struct Dataset{
 //    Return total number of points in dataset
-    virtual size_t get_num_points() const;
+    size_t num_points;
 
 //    Return times of dataset points
-    virtual std::vector<double> get_times() const;
+    std::vector<double> times;
 
 //    Return states of dataset points
-    virtual std::vector<std::vector<double> > get_states() const;
+    std::vector<std::vector<double> > states;
 };
 
 #endif //SYSID_PAGMO_DATASET_H
